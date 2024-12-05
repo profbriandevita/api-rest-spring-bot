@@ -17,7 +17,7 @@ import java.util.List;
 public class ProductoController {
 
 
-    @Autowired
+
     private   ProductoRepositorio repositorio;
 
     public ProductoController(ProductoRepositorio repositorio) {
@@ -48,8 +48,7 @@ public class ProductoController {
     @PutMapping("/producto/{id}")
     public Producto actualizarProducto(@RequestBody Producto nuevoProducto,@PathVariable Long id) {
         if (repositorio.existsById(id)) {
-                nuevoProducto.setId(id);
-                nuevoProducto.se
+            nuevoProducto.setPrecio(22);
             return repositorio.save(nuevoProducto);
         } else {
             return null;

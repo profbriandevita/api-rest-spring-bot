@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 
-@Data
+
 @Table(name = "producto")
 @Entity
 public class Producto {
@@ -22,7 +22,27 @@ public class Producto {
     private int precio;
 
 
+    public Long getId() {
+        return id;
+    }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public int getPrecio() {
+        return precio;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setPrecio(int precio) {
+        this.precio = precio;
+    }
 }
