@@ -14,12 +14,15 @@ import java.util.List;
 
 
 @RestController
+
+
 public class ProductoController {
 
 
 
-    private   ProductoRepositorio repositorio;
+    private  final ProductoRepositorio repositorio;
 
+    @Autowired
     public ProductoController(ProductoRepositorio repositorio) {
         this.repositorio = repositorio;
     }
