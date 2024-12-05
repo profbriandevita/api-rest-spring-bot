@@ -4,7 +4,7 @@ package com.example.modelo;
 
 
 import jakarta.persistence.*;
-import lombok.*;
+
 
 
 
